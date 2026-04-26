@@ -17,9 +17,6 @@ Backend API for managing stock operations including product creation, stock entr
 - MySQL
 
 ## 🧠 Architecture
-
-```md id="arch"
-## 🧠 Architecture
 - Modules (Product, Movement)
 - DTOs for validation
 - Services for business logic
@@ -27,12 +24,15 @@ Backend API for managing stock operations including product creation, stock entr
 
 ## ▶️ Getting Started
 
-```bash
+```
+</> bash
 npm install
 cp .env.example .env
 npx prisma migrate dev
 npm run start:dev
+```
 
+---
 ## 📡 API Endpoints
 
 ### 🧾 Products
@@ -42,6 +42,7 @@ npm run start:dev
 ### 📦 Movements
 - `POST /movements` → Create stock moviment  
 - `GET /movements/stock` → Check current stock
+---
 
 ## 💡 Highlights
 
