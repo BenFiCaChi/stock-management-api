@@ -1,14 +1,14 @@
 # 📦 Stock Management API
 
-## 📌 Description
+## 📌 Overview
 
-API for managing stock with entry, exit and transfer operations.
+Backend API for managing stock operations including product creation, stock entry, exit, and transfer between warehouses.
 
 ## 🚀 Features
 
 - Product management
 - Stock entry
-- Stock exit (with validation)
+- Stock exit with validation
 - Stock transfer between warehouses
 - Real-time stock calculation
 
@@ -19,11 +19,15 @@ API for managing stock with entry, exit and transfer operations.
 - Prisma ORM
 - MySQL
 
-## ▶️ Run project
+## ▶️ Getting Started
 
+```
+</> bash
 npm install
+cp .env.example .env
 npx prisma migrate dev
 npm run start:dev
+```
 
 ## 📡 Endpoints
 
@@ -34,6 +38,7 @@ GET /movements/stock
 
 ## 💡 Highlights
 
+- Clean architecture
 - Business logic implementation
 - Transaction handling
 - Stock validation
