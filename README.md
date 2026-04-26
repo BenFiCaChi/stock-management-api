@@ -29,12 +29,21 @@ npx prisma migrate dev
 npm run start:dev
 ```
 
-## 📡 Endpoints
+---
 
-POST /products
-GET /products
-POST /movements
-GET /movements/stock
+## 📡 API Endpoints
+
+### 🧾 Products
+
+- `POST /products` → Create product
+- `GET /products` → List products
+
+### 📦 Movements
+
+- `POST /movements` → Create stock movement
+- `GET /movements/stock` → Check current stock
+
+---
 
 ## 💡 Highlights
 
