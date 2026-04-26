@@ -22,6 +22,10 @@ export class MovementService {
     }
   }
 
+  async findAll() {
+    return await this.prisma.movement.findMany();
+  }
+
   // 🔹 ENTRADA
   private async handleEntry(data: CreateMovementDto) {
     return await this.prisma.movement.create({
@@ -34,6 +38,7 @@ export class MovementService {
     });
   }
 
+  // 🔹 SAÍDA
   private async handleExit(data: CreateMovementDto) {
     const stock = await this.getStock(data.productId, data.warehouseId);
 
