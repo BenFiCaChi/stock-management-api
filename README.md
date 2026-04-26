@@ -19,6 +19,19 @@ Backend API for managing stock operations including product creation, stock entr
 - Prisma ORM
 - MySQL
 
+## 🧠 Architecture
+
+- Modules (Product, Movement)
+- DTOs for validation
+- Services for business logic
+- Prisma for data access
+
+## 🧠 Business Logic Example
+
+- Prevents stock exit when quantity is insufficient
+- Handles stock transfers as atomic transactions
+- Calculates stock dynamically based on movements
+
 ## ▶️ Getting Started
 
 ```
@@ -43,6 +56,17 @@ npm run start:dev
 - `POST /movements` → Create stock movement
 - `GET /movements/stock` → Check current stock
 
+## 📥 Example Request
+
+POST /movements
+
+{
+"productId": 1,
+"quantity": 10,
+"warehouseId": 1,
+"type": "ENTRY"
+}
+
 ---
 
 ## 💡 Highlights
@@ -51,3 +75,12 @@ npm run start:dev
 - Business logic implementation
 - Transaction handling
 - Stock validation
+
+## 🎯 Why this project
+
+This project demonstrates real-world backend challenges such as:
+
+- Stock consistency
+- Transaction handling
+- Business rule validation
+- Scalable architecture design
