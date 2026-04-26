@@ -11,6 +11,11 @@ export class MovementController {
     return this.movementService.create(body);
   }
 
+  @Get()
+  findAll() {
+    return this.movementService.findAll();
+  }
+
   @Get('stock')
   getStock(
     @Query('productId') productId: number,
