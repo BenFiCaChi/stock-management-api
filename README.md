@@ -22,3 +22,17 @@ Backend API for managing stock operations including product creation, stock entr
 npm install
 npx prisma migrate dev
 npm run start:dev
+
+📡 Endpoints
+Products
+POST /products
+GET /products
+Movements
+POST /movements
+GET /movements/stock
+
+💡 Highlights
+Clean architecture
+Business logic implementation
+Transaction handling
+Stock validation
