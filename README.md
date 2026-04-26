@@ -23,7 +23,7 @@ npm install
 npx prisma migrate dev
 npm run start:dev
 
-📡 Endpoints
+## 📡 Endpoints
 Products
 POST /products
 GET /products
@@ -31,7 +31,7 @@ Movements
 POST /movements
 GET /movements/stock
 
-💡 Highlights
+## 💡 Highlights
 Clean architecture
 Business logic implementation
 Transaction handling
